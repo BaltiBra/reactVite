@@ -5,15 +5,21 @@ import Logo from './Icon.jsx';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import CartWidget from './CartWidget.jsx';
+import { Link, Navigate } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const NavbarAndIcon = ({onSearch}) => {
   const navbarStyle = {
+     display: 'flex',
      justifyContent: 'center',
      alignItems: 'center',
      marginTop: '10px',
      borderRadius: '10px',
      padding: '10px',
-     width: '70%',
+     width: '80%',
   };
 
   return (
